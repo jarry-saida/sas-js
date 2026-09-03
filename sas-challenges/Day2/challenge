@@ -1,0 +1,25 @@
+//challenge1
+function afficherPairs(n) {
+    for(i=0;i<=n;i++){
+        if(i % 2 == 0){
+            console.log(i);
+        }
+    }
+}
+console.log(afficherPairs(10));
+//CHALLENGE2
+function compterPairs(nbr1, nbr2) {
+    let comp = 0 ;
+    let sommePAI = 0;
+    let sommeIMP = 0;
+    for(i=nbr1;i<=nbr2;i++){
+        if(i % 2 == 0){
+            sommePAI +=i;
+            comp++;
+            }else{
+            sommeIMP+=i;
+        }
+        }
+    }
+    let test = compterPairs(2,6);
+    console.log(test);
