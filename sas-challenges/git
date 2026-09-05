@@ -1,0 +1,10 @@
+git init : awal mera, create repo local
+git remote add (origin) (url)  : link local avec remote(lien github)
+
+
+git add (./(name))
+git add (./(name))
+git commit 
+
+
+git push origin principal
