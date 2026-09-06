@@ -48,3 +48,40 @@ for(let i = 0;i<texte.length;i++){
 }
 console.log(N);
 //DEFIS6
+let WORD = "level";
+let X = true ;
+for(let i=0;i < WORD.length/2;i++){
+    if(WORD[i] !== WORD[WORD.length-1-i]){
+        X = false;
+        break;
+    }
+}
+console.log(X);
+//Défis7
+let numbe = [12, 5, 20, 8, 20, 17];
+let largest = numbe[0];
+function TrouvezLargest(numbe){
+    for(let i=1;i < numbe.length;i++){
+        if(numbe[i] > largest){
+            largest = numbe[i];
+        }
+    }
+    return largest;
+}
+//console.log(TrouvezLargest(numbe)); affiche 20
+function TrouvezSecondLargest(numbe,largest){
+    let secondLargest = null;
+    largest = TrouvezLargest(numbe);
+    for(let i=0;i < numbe.length;i++){
+        if(numbe[i] < largest && numbe[i] !== largest){
+            if(secondLargest === null || numbe[i] > secondLargest){
+                secondLargest = numbe[i];
+            }
+        }
+    }
+    return secondLargest;
+}
+console.log(TrouvezSecondLargest(numbe,largest));
+//Défis8
+
+
