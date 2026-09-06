@@ -1,8 +1,11 @@
 //niveau1
+//ex1
 const Voiture = {
   marque : jeep,
   modéle : wrangler,
   année  :2030,
-  methode: "Cette voiture est une " + [marque] + [modèle]
+  afficher: function() {
+        console.log("Cette voiture est une " + this.marque + " " + this.modele);
+    }
 };
-console.log(Voiture.methode);
+Voiture.affiche;
