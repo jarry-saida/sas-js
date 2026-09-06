@@ -37,7 +37,10 @@ const plusDe28 = utilisateurs.filter(u => u.age > 28);
 const listeNoms = utilisateurs.map(u => u.nom);
 console.log(listeNoms);
 // Résultat : ["Alice", "Bob", "Charlie"]
+let objet = {
+    propriété: valeur,
 
-
-
-
+    méthode: function() {
+        console.log(this.propriété);
+    }
+};
